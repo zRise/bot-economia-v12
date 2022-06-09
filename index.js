@@ -17,13 +17,13 @@ app.listen(process.env.PORT); //Recebe solicitações que o deixa online
 
 bot.on("message", msg => {
   if(msg.content === `<@${bot.user.id}>`)
-  msg.channel.send(`<a:hello:905220515227115551> Olá! Meu prefixo é \`d!\`, para saber minha funcionalidades use \`d!ajuda\`!`) 
+  msg.channel.send(`Olá! Meu prefixo é \`!\`.`) 
 })
 
 bot.on("message", msg => {
   if(msg.content === `<@!${bot.user.id}>`)
-  msg.channel.send(`<a:hello:905220515227115551> Olá! Meu prefixo é \`d!\`, para saber minha funcionalidades use \`d!ajuda\`!`) 
-});
+  msg.channel.send(`Olá! Meu prefixo é \`!\`.`) 
+})
 
 bot.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
@@ -59,7 +59,7 @@ bot.on('message', message => {
 bot.on('ready', () => {
   console.log('Estou online');
   var tabela = [
-    { name: `Use d!help para ver meus comandos`, type: 'PLAYING' },
+    { name: `Economizando por aí...`, type: 'PLAYING' },
     { name: `Cuidando de ${bot.users.cache.size} usuários`, type: 'PLAYING' },
   ];
 
